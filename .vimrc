@@ -1,8 +1,5 @@
-" Get the defaults that most users want.
-source $VIMRUNTIME/defaults.vim
-
 " Pick a leader key
-let mapleader = " "
+let mapleader = "  "
 
 " Don't try to be vi compatible
 set nocompatible
@@ -130,8 +127,10 @@ set background=dark
 " set colorscheme - does not work very well in terminal window
 "colorscheme base16-harmonic16-dark
 
-" Highlights the line of the cursor
+" Highlights the line of the cursor WARNING: makes vim a lot slower
 set cursorline
+" To make the above a bit faster
+set lazyredraw
 
 " FINDING FILES:
 " Search down into subfolders

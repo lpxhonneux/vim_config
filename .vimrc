@@ -108,6 +108,9 @@ set number
 " And this sets there to be line numbers
 set relativenumber
 
+" try to make vim less laggy
+set lazyredraw
+
 " Color scheme (terminal)
 set background=dark
 " New vim version allows greater color palet

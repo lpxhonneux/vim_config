@@ -110,8 +110,11 @@ set relativenumber
 
 " Color scheme (terminal)
 set background=dark
+" New vim version allows greater color palet
+set termguicolors
 
 " set colorscheme
+colorscheme gruvbox
 
 " FINDING FILES:
 " Search down into subfolders

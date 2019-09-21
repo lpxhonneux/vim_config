@@ -4,13 +4,8 @@ let mapleader = "  "
 " Don't try to be vi compatible
 set nocompatible
 
-" TODO: Load plugins here (pathogen or vundle)
-
 " Turn on syntax highlighting
 syntax on
-
-" For plugins to load correctly
-filetype plugin indent on
 
 " Show line numbers
 set number
@@ -26,7 +21,7 @@ set encoding=utf-8
 
 " Whitespace
 set wrap
-set textwidth=79
+set textwidth=99
 set formatoptions=tcqrn1
 set tabstop=4
 set shiftwidth=4
@@ -37,8 +32,6 @@ set noshiftround
 " Cursor motion
 set scrolloff=4
 set backspace=indent,eol,start
-set matchpairs+=<:> " use % to jump between pairs
-runtime! macros/matchit.vim
 
 " Move up/down editor lines
 nnoremap j gj
@@ -86,11 +79,6 @@ set ignorecase
 set smartcase
 set showmatch
 
-" Remap help key.
-inoremap <F1> <ESC>:set invfullscreen<CR>a
-nnoremap <F1> :set invfullscreen<CR>
-vnoremap <F1> :set invfullscreen<CR>
-
 " Formatting
 map <leader>q gqip
 
@@ -120,17 +108,10 @@ set number
 " And this sets there to be line numbers
 set relativenumber
 
-
 " Color scheme (terminal)
 set background=dark
 
-" set colorscheme - does not work very well in terminal window
-"colorscheme base16-harmonic16-dark
-
-" Highlights the line of the cursor WARNING: makes vim a lot slower
-set cursorline
-" To make the above a bit faster
-set lazyredraw
+" set colorscheme
 
 " FINDING FILES:
 " Search down into subfolders
